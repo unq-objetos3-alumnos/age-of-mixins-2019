@@ -48,7 +48,7 @@ class Guerrero(var energia:Int, val fuerza:Int, override val defensa:Int)
 class Espadachin(energia:Int, fuerza:Int, defensa:Int, val coefArma:Int)
   extends Guerrero(energia, fuerza, defensa) {
 
-  override def ataque = fuerza * coefArma
+  override def ataque = super.ataque * coefArma
 
 }
 
